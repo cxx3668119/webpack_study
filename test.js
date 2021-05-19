@@ -1,1 +1,2 @@
-let a = "ceshi1"
+let a = ["hello", "world"]
+console.log(a);
