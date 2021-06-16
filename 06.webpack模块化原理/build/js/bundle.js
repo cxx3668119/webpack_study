@@ -1,25 +1,27 @@
 /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/format.js":
-/*!**************************!*\
-  !*** ./src/js/format.js ***!
-  \**************************/
-/***/ (function(module) {
+/***/ "./src/js/math.js":
+/*!************************!*\
+  !*** ./src/js/math.js ***!
+  \************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-const dateFormat = (date) => {
-  return "2020-12-12";
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "sum": function() { return /* binding */ sum; },
+/* harmony export */   "mul": function() { return /* binding */ mul; }
+/* harmony export */ });
+const sum = (num1, num2) => {
+  return num1 + num2;
+}
+console.log(cdb);
+
+const mul = (num1, num2) => {
+  return num1 * num2;
 }
 
-const priceFormat = (price) => {
-  return "100.00";
-}
-
-
-module.exports = {
-  dateFormat,
-  priceFormat
-}
 
 
 /***/ })
@@ -51,17 +53,44 @@ module.exports = {
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 !function() {
-/*!*****************************!*\
-  !*** ./src/common_index.js ***!
-  \*****************************/
-const { dateFormat, priceFormat } = __webpack_require__(/*! ./js/format */ "./src/js/format.js");
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+const math = __webpack_require__(/*! ./js/math */ "./src/js/math.js");
 
-console.log(dateFormat("abc"));
-console.log(priceFormat("abc"));
-
+console.log(math.sum(20, 30));
 }();
 /******/ })()
 ;
