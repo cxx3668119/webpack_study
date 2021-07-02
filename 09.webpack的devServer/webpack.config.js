@@ -1,9 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const { plugins } = require('../07.source-map/wk.config');
 
 module.exports = {
-  watch: true,
+  // watch: true,
   mode: "development",
   entry: "./src/index.js",
   output: {
